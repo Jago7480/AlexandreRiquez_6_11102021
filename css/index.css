@@ -18,26 +18,33 @@ body {
     margin: 0;
 }
 
-h1 { /* Nom des photographes / Titres */
+h1 { /* Header */
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    color: #911C1C;
+}
+
+h2 { /* Nom des photographes */
     font-style: normal;
     font-weight: normal;
     font-size: 36px;
 }
 
-h2 { /* Tags navbar */
+h3 { /* Tags navbar */
     font-style: normal;
     font-weight: 500;
     font-size: 12px;
 }
 
-h3 { /* Localisation */
+h4 { /* Localisation */
     font-style: normal;
     font-weight: normal;
     font-size: 13px;
     /* color: #901C1C; */
 }
 
-h4 { /* Prix */
+h5 { /* Prix */
     font-style: normal;
     font-weight: normal;
     font-size: 9px;
@@ -54,6 +61,8 @@ a {
     text-decoration: none;
 }
 
+/* CSS HEADER */
+
 header {
     display: flex;
     align-items: center;
@@ -63,6 +72,8 @@ header {
 #logo {
     margin: 50px;
 }
+
+/* Navigation bar */
 
 ul {
     display: flex;
@@ -76,4 +87,13 @@ ul {
     padding: 2px 7px 2px 7px;
     margin: 3px;
     color: #911C1C;
+    transition: 0.1s ease-in;
 }
+
+.nav-tag:hover {
+    border: 0.5px solid #911C1C;
+    background-color: #911C1C;
+    color: #E5E5E5;
+}
+
+/* CSS MAIN */
