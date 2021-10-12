@@ -41,14 +41,12 @@ h4 { /* Localisation */
     font-style: normal;
     font-weight: normal;
     font-size: 13px;
-    /* color: #901C1C; */
 }
 
 h5 { /* Prix */
     font-style: normal;
     font-weight: normal;
     font-size: 9px;
-    /* color: #757575; */
 }
 
 p { /* Texte lambda */
@@ -65,12 +63,13 @@ a {
 
 header {
     display: flex;
+    justify-content: space-evenly;
     align-items: center;
     flex-direction: row;
+    margin: 20px 0px 0px 0px;
 }
 
 .header-logo {
-    margin: 50px;
     display: block;
 }
 
@@ -102,3 +101,43 @@ header {
 }
 
 /* CSS MAIN */
+
+.container-photographe {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.link-photographe {
+
+}
+
+.avatar {
+    object-fit: cover;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+.nom-photographe {
+    display: flex;
+    justify-content: center;
+    color:#D3573C;
+}
+
+.localisation {
+    color: #901C1C;
+}
+
+.text-photographe {
+
+}
+
+.prix {
+    color: #757575;
+}
+
+.tagsbar {
+    display: flex;
+    flex-direction: row;
+}
