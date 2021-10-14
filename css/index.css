@@ -103,6 +103,7 @@ header {
 /* CSS MAIN */
 
 .container-photographe {
+    width: 310px;
     display: flex;
     flex-direction: column;
     align-items: center;
