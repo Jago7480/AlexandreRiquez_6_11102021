@@ -105,7 +105,7 @@ header {
 .container_photographes { /* Conteneur englobant tous les panels */
     display: flex;
     justify-content: center;
-    width: 85%;
+    width: 80%;
     flex-wrap: wrap;
     margin: auto;
 }
