@@ -5,7 +5,7 @@ index.css
 
 * {
     box-sizing: border-box;
-    background-color: #E5E5E5;
+    /* background-color: #E5E5E5; */
 }
 
 html {
@@ -102,43 +102,64 @@ header {
 
 /* CSS MAIN */
 
-.container-photographe {
-    width: 310px;
+.container_photographes { /* Conteneur englobant tous les panels */
+    display: flex;
+    justify-content: center;
+    width: 85%;
+    flex-wrap: wrap;
+    margin: auto;
+}
+
+.panel-photographe { /* Panel englobant toute les informations du photographe */
+    width: 305px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 50px;
+}
+
+.link-photographe { /* Englobe l'avatar et le nom du photographe */
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.link-photographe {
-
-}
-
-.avatar {
+.avatar { /* Avatar du photographe */
+    z-index: 1;
     object-fit: cover;
     width: 200px;
     height: 200px;
     border-radius: 50%;
+    box-shadow: 0px 8px 10px #C4C4C4;
 }
 
-.nom-photographe {
+.infos-photographe { /* Regroupe le nom, la localisation, le texte de présentation et le prix du photographe */
     display: flex;
-    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.nom-photographe { /* Nom du photographe */
     color:#D3573C;
+    margin: 20px 0px 0px 0px;
 }
 
-.localisation {
+.localisation { /* Localisation du photographe */
     color: #901C1C;
+    margin: 0px 0px 3px 0px;
 }
 
-.text-photographe {
-
+.text-photographe { /* Texte de présentation du photographe */
+    margin: 0px 0px 3px 0px;
 }
 
-.prix {
+.prix { /* Prix à la journée du photographe */
     color: #757575;
+    margin: 0px 0px 0px 0px;
 }
 
-.tagsbar {
+.tagsbar { /* Tags du photographe */
     display: flex;
     flex-direction: row;
+    margin: -2px 0px 0px 0px;
 }
