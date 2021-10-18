@@ -199,3 +199,59 @@ header {
     flex-direction: row;
     margin: -2px 0px 0px 0px;
 }
+
+/* CSS - FORMAT TABLETTE */
+
+@media only screen and (min-width: 768px) and (max-width: 1200px) {
+
+    header {
+        flex-direction: column;
+    }
+
+    .container_photographes {
+        width: auto;
+    }
+
+    .panel-photographe {
+        margin: 25px;
+    }
+
+}
+
+/* CSS - FORMAT MOBILE - GRAND FORMAT */
+
+@media only screen and (max-width: 767px) {
+
+    header {
+        flex-direction: column;
+    }
+
+    .navbar {
+        margin: 10px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .container_photographes {
+        width: auto;
+    }
+
+    .panel-photographe {
+        margin: 25px;
+    }
+
+}
+
+/* CSS - FORMAT MOBILE - PETIT FORMAT */
+
+@media only screen and (max-width: 320px) {
+
+    h1 {
+        font-size: 30px;
+    }
+
+    h2 {
+        font-size: 30px;
+    }
+
+}
