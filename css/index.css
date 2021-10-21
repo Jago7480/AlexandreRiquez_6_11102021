@@ -5,7 +5,6 @@ index.css
 
 * {
     box-sizing: border-box;
-    /* background-color: #E5E5E5; */
 }
 
 html {
@@ -61,12 +60,13 @@ a {
 
 /* CSS HEADER */
 
-header {
+.container-header {
+    width: 1366px;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     flex-direction: row;
-    margin: 20px 0px 0px 0px;
+    margin: 45px auto;
 }
 
 .header-logo {
@@ -74,6 +74,7 @@ header {
 }
 
 #logo {
+    width: auto;
     height: auto;
     display: inline;
     order: 0;
@@ -113,7 +114,6 @@ header {
 .container_photographes { /* Conteneur englobant tous les panels */
     display: flex;
     justify-content: center;
-    width: 80%;
     flex-wrap: wrap;
     margin: auto;
 }
@@ -123,7 +123,7 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 50px;
+    margin: 50px 105px 20px 105px;
 }
 
 .link-photographe { /* Englobe l'avatar et le nom du photographe */
@@ -208,10 +208,10 @@ header {
     margin: -2px 0px 0px 0px;
 }
 
-@media only screen and (min-width: 1280px) and (max-width: 1520px) { /* Réglage de la largeur du container des panels photographe */
+@media only screen and (min-width: 1280px) and (max-width: 1545px) { /* Réglage de la largeur du container des panels photographe */
 
-    .container_photographes {
-        width: 95%;
+    .panel-photographe {
+        margin: 50px 50px 20px 50px;
     }
 
 }
@@ -220,8 +220,9 @@ header {
 
 @media only screen and (min-width: 768px) and (max-width: 1280px) {
 
-    header {
+    .container-header {
         flex-direction: column;
+        width: auto;
     }
 
     .container_photographes {
@@ -238,7 +239,8 @@ header {
 
 @media only screen and (max-width: 767px) {
 
-    header {
+    .container-header {
+        width: auto;
         margin: 40px 10px 0px 10px;
         flex-direction: row;
         flex-wrap: wrap;
@@ -246,8 +248,8 @@ header {
 
     #logo {
         width: 40%;
-        margin: 0px 20px 0px 0px;
         height: auto;
+        margin: 0px 20px 0px 0px;
     }
 
     .header-logo {
@@ -275,6 +277,17 @@ header {
 
     .panel-photographe {
         margin: 25px;
+    }
+
+}
+
+/* CSS - FORMAT MOBILE - MOYEN FORMAT */
+
+@media only screen and (min-width: 321px) and (max-width : 375px) {
+    
+    #logo {
+        width: 40%;
+        height: auto;
     }
 
 }
