@@ -76,6 +76,7 @@ header {
 #logo {
     height: auto;
     display: inline;
+    order: 0;
 }
 
 /* Navigation bar */
@@ -83,6 +84,7 @@ header {
 .navbar {
     display: flex;
     flex-direction: row;
+    order: 0;
 }
 
 .nav-tag {
@@ -98,6 +100,12 @@ header {
     border: 0.5px solid #911C1C;
     background-color: #911C1C;
     color: #E5E5E5;
+}
+
+/* */
+
+.titre {
+    order: 0;
 }
 
 /* CSS MAIN */
@@ -200,9 +208,17 @@ header {
     margin: -2px 0px 0px 0px;
 }
 
+@media only screen and (min-width: 1280px) and (max-width: 1520px) { /* Réglage de la largeur du container des panels photographe */
+
+    .container_photographes {
+        width: 95%;
+    }
+
+}
+
 /* CSS - FORMAT TABLETTE */
 
-@media only screen and (min-width: 768px) and (max-width: 1200px) {
+@media only screen and (min-width: 768px) and (max-width: 1280px) {
 
     header {
         flex-direction: column;
@@ -223,13 +239,34 @@ header {
 @media only screen and (max-width: 767px) {
 
     header {
-        flex-direction: column;
+        margin: 40px 10px 0px 10px;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    #logo {
+        width: 40%;
+        margin: 0px 20px 0px 0px;
+        height: auto;
+    }
+
+    .header-logo {
+        display: contents;
+    }
+
+    h1 {
+        font-size: 16px;
+    }
+
+    .titre {
+        order: 2;
     }
 
     .navbar {
-        margin: 10px;
+        margin: 20px 10px 10px 10px;
         flex-wrap: wrap;
         justify-content: center;
+        order: 3;
     }
 
     .container_photographes {
@@ -246,12 +283,13 @@ header {
 
 @media only screen and (max-width: 320px) {
 
-    h1 {
+    h2 {
         font-size: 30px;
     }
 
-    h2 {
-        font-size: 30px;
+    #logo {
+        width: 40%;
+        height: auto;
     }
 
 }
