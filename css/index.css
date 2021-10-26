@@ -48,6 +48,13 @@ h5 { /* Prix */
     font-size: 9px;
 }
 
+h6 { /* Passer au contenu */
+    font-weight: 700;
+    font-style: normal;
+    font-size: 18px;
+    color: black;
+}
+
 p { /* Texte lambda */
     font-style: normal;
     font-weight: normal;
@@ -59,6 +66,24 @@ a {
 }
 
 /* CSS HEADER */
+
+.container-sticky {
+    z-index: 2;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    margin: 6px 0px 6px -91px;
+}
+
+#retour-contenu {
+    width: 182px;
+    height: 30px;
+    background-color: #DB8876;
+    border-radius: 7px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
 
 .container-header {
     width: 1366px;
