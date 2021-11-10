@@ -25,14 +25,14 @@
                         <a href="#" class="header-logo"><img src="/icons/logo.svg" id="logo" alt="Fisheye Home page"></a>
 
                         <nav class="navbar">
-                            <h3><a href="#"><span class="nav-tag" aria-label="tag">#Portrait</span></a></h3>
-                            <h3><a href="#"><span class="nav-tag" aria-label="tag">#Art</span></a></h3>
-                            <h3><a href="#"><span class="nav-tag" aria-label="tag">#Fashion</span></a></h3>
-                            <h3><a href="#"><span class="nav-tag" aria-label="tag">#Architecture</span></a></h3>
-                            <h3><a href="#"><span class="nav-tag" aria-label="tag">#Travel</span></a></h3>
-                            <h3><a href="#"><span class="nav-tag" aria-label="tag">#Sport</span></a></h3>
-                            <h3><a href="#"><span class="nav-tag" aria-label="tag">#Animals</span></a></h3>
-                            <h3><a href="#"><span class="nav-tag" aria-label="tag">#Events</span></a></h3>
+                            <button class="nav-tag" type="button">#Portrait</button>
+                            <button class="nav-tag" type="button">#Art</button>
+                            <button class="nav-tag" type="button">#Fashion</button>
+                            <button class="nav-tag" type="button">#Architecture</button>
+                            <button class="nav-tag" type="button">#Travel</button>
+                            <button class="nav-tag" type="button">#Sport</button>
+                            <button class="nav-tag" type="button">#Animals</button>
+                            <button class="nav-tag" type="button">#Events</button>
                         </nav>
 
                         <h1 class="titre">Nos photographes</h1>
@@ -41,24 +41,22 @@
 
         <main>
             <section class="container_photographes">
-                <div class="panel-photographe">
+                <div class="panel-photographe" data-tags="id">
                     <a href="mimi-keel.html" class="link-photographe">
                         <div class="container-avatar">
-                            <img src="img_vid/Mimi/Portrait_Nora.jpg" id="mimi-keel" alt="">
+                            <img src="#" alt="" data-tags="portrait">
                         </div>
-                        <h2 class="nom-photographe">Mimi Keel</h2>
+                        <h2 class="nom-photographe" data-tags="name">name</h2>
                     </a>
                     <div class="infos-photographe">
-                        <h4 class="localisation">London, UK</h4>
-                        <p class="text-photographe">Voir le beau dans le quotidien</p>
-                        <h5 class="prix">400€/jour</h5>
-                    </div>
-                        <div class="tagsbar">
-                            <h3><a href="#"><span class="nav-tag">#portrait</span></a></h3>
-                            <h3><a href="#"><span class="nav-tag">#events</span></a></h3>
-                            <h3><a href="#"><span class="nav-tag">#travel</span></a></h3>
-                            <h3><a href="#"><span class="nav-tag">#animals</span></a></h3>
+                        <div class="localisation-photographe">
+                            <h4 class="localisation" data-tags="city">city</h4>
+                            <h4 class="localisation" data-tags="country">country</h4>
                         </div>
+                        <p class="text-photographe" data-tags="tagline">tagline</p>
+                        <h5 class="prix" data-tags="price">price</h5>
+                    </div>
+                        <div class="tagsbar" data-tags="tags">tags</div>
                 </div>
                 <article class="panel-photographe">
                     <a href="ellie-rose.html" class="link-photographe">
