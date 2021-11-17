@@ -1,6 +1,6 @@
 export default function scroll(){
 
-         //PASSER AU CONTENU
+        //PASSER AU CONTENU
 
         //Création de la function onscroll
         window.onscroll = retourContenu;
