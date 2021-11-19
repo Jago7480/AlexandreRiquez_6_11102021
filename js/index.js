@@ -13,7 +13,3 @@ scroll();
 
 // TRI PAR TAG
 
-
-
-// AFFICHAGE DYNAMIQUE PHOTOGRAPHES
-
