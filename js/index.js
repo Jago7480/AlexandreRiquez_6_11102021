@@ -9,7 +9,7 @@ fetchData(jsonUrl).then((response)=>{
 
 });
 
-// scroll();
+scroll();
 
 // TRI PAR TAG
 

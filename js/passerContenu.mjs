@@ -1,18 +1,22 @@
 export default function scroll(){
 
-        //PASSER AU CONTENU
+        // Affichage du bouton "Passer au contenu" lors d'un scroll
 
-        //Création de la function onscroll
-        window.onscroll = retourContenu;
+        // Création de la function onscroll
+        window.onscroll = function() {retourContenu()};
 
-        //Si la page est scroll à "50" pixels, l'élément sélectionné apparait. Il disparait quand nous revenons en haut de la page.
+        // Si la page est scroll à plus de "50" pixels, l'élément apparait.
         function retourContenu() {
-            if (document.scrollTop > 50 || document.querySelector.scrollTop > 50) {
-                const btnContenu = document.querySelector('#retour-contenu');
-                btnContenu.style.display = "none"
+
+            if  (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+
+            document.getElementById("retour-contenu").style.display = "flex";
+
             } else {
-                const btnContenu = document.querySelector('#retour-contenu');
-                btnContenu.style.display = "flex";
+
+            // Si l'utilisateur clique sur le bouton pour "passer au contenu" ou scroll tout en haut, l'élément disparait.
+            document.getElementById("retour-contenu").style.display = "none";
+
             }
         }
  

@@ -85,6 +85,10 @@ a {
     align-items: center;
 }
 
+.showContenu {
+    display: flex;
+}
+
 .container-header {
     width: 1366px;
     display: flex;
