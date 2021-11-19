@@ -175,6 +175,14 @@ a {
     box-shadow: 0px 8px 10px #C4C4C4;
 }
 
+.container-avatar img{
+
+    display:inline-block;
+    width:200px;
+    height:200px;
+    object-fit:cover;
+}
+
 .infos-photographe { /* Regroupe le nom, la localisation, le texte de présentation et le prix du photographe */
     display: flex;
     align-items: center;
@@ -204,10 +212,19 @@ a {
     margin: 0px 0px 0px 0px;
 }
 
-.tagsbar { /* Tags du photographe */
-    display: flex;
-    flex-direction: row;
-    margin: -2px 0px 0px 0px;
+.tagsbar{
+    margin-top:5px;
+}
+
+.photographer-tag { /* Tags du photographe */
+    color:#911c1c;
+    border:1px solid #911c1c;
+    padding:3px;
+    text-align:center;
+    display:inline-block;
+    border-radius:15px;
+    font-size:0.75rem;
+    font-weight:bold;
 }
 
 @media only screen and (min-width: 1280px) and (max-width: 1545px) { /* Réglage de la largeur du container des panels photographe */
