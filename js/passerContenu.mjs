@@ -1,6 +1,10 @@
 export default function scroll(){
+    /** 
+   * Cette fonction permet d'afficher un bouton lors du scroll de la page pour revenir au début
+   * @param {string}
+   * @return {true}
 
-        // Affichage du bouton "Passer au contenu" lors d'un scroll
+    */
 
         // Création de la function onscroll
         window.onscroll = function() {retourContenu()};
@@ -14,7 +18,7 @@ export default function scroll(){
 
             } else {
 
-            // Si l'utilisateur clique sur le bouton pour "passer au contenu" ou scroll tout en haut, l'élément disparait.
+        // Si l'utilisateur clique sur le bouton pour "passer au contenu" ou scroll tout en haut, l'élément disparait.
             document.getElementById("retour-contenu").style.display = "none";
 
             }

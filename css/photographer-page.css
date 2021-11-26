@@ -19,9 +19,9 @@ body {
 
 h1 { /* Header */
     font-style: normal;
-    font-weight: normal;
-    font-size: 36px;
-    color: #911C1C;
+    font-weight: 400;
+    font-size: 64px;
+    color: #D3573C;
 }
 
 h2 { /* Nom des photographes */
