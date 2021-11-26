@@ -27,7 +27,7 @@ export default function displayPhotographers(arrOfPhotographers){
                     <p class="text-photographe">${photographer.tagline}</p>
                     <h5 class="prix">${photographer.price}€/jour</h5>
                 </div>
-                <div class="tagsbar">
+                <div class="tagsbar"><h3>
 
                    ${photographer.tags.map((tag)=>{
 
@@ -35,7 +35,7 @@ export default function displayPhotographers(arrOfPhotographers){
 
                    }).join("  ")}
                 
-                </div>
+                </h3></div>
             </article>
 
         `
