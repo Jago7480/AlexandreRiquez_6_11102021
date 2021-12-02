@@ -154,7 +154,7 @@ header {
 
 .nom-photographe { /* Nom du photographe */
     color:#D3573C;
-    margin: 20px 0px 0px 0px;
+    margin: 0px;
 }
 
 .localisation-photographe {
@@ -163,11 +163,11 @@ header {
 
 .localisation { /* Localisation du photographe */
     color: #901C1C;
-    margin: 0px 3px 3px 3px;
+    margin: 3px;
 }
 
 .text-photographe { /* Texte de présentation du photographe */
-    margin: 0px 0px 3px 0px;
+    margin: 10px 3px 10px 3px;
     color: #525252;
     font-size: 18px;
 }
