@@ -14,17 +14,18 @@ html {
 
 body {
     font-family: 'DM Sans', sans-serif;
-    margin: 0;
+    width: 1440px;
+    margin: auto;
 }
 
-h1 { /* Header */
+h1 { /* Nom des photographes */
     font-style: normal;
     font-weight: 400;
     font-size: 64px;
     color: #D3573C;
 }
 
-h2 { /* Nom des photographes */
+h2 { 
     font-style: normal;
     font-weight: normal;
     font-size: 36px;
@@ -38,8 +39,8 @@ h3 { /* Tags navbar */
 
 h4 { /* Localisation */
     font-style: normal;
-    font-weight: normal;
-    font-size: 13px;
+    font-weight: 400;
+    font-size: 24px;
 }
 
 h5 { /* Prix */
@@ -94,4 +95,79 @@ header {
 
 #logo {
     display: inline;
+}
+
+/* MAIN */
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    order: 0;
+}
+
+.nav-tag {
+    display: inline-block;
+    border: 0.5px solid #C4C4C4;
+    border-radius: 50px;
+    padding: 2px 7px 2px 7px;
+    margin: 3px;
+    color: #911C1C;
+    background-color: #FFFFFF;
+    transition: 0.1s ease-in;
+    cursor: pointer;
+}
+
+.nav-tag:hover {
+    border: 0.5px solid #911C1C;
+    background-color: #911C1C;
+    color: #E5E5E5;
+}
+
+#container_photographer {
+    background-color: #fafafa;
+    width: 1240px;
+    height: 313px;
+    border-radius: 5px;
+    margin: 0px 100px 0px 100px;
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+}
+
+.container-avatar { /* Container de l'avatar du photographe */
+    display: flex;
+    justify-content: center;
+    z-index: 1;
+    overflow: hidden;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    box-shadow: 0px 8px 10px #C4C4C4;
+}
+
+.container-avatar img{
+    display:inline-block;
+    width:200px;
+    height:200px;
+    object-fit:cover;
+}
+
+.nom-photographe { /* Nom du photographe */
+    color:#D3573C;
+    margin: 20px 0px 0px 0px;
+}
+
+.localisation-photographe {
+    display: flex;
+}
+
+.localisation { /* Localisation du photographe */
+    color: #901C1C;
+    margin: 0px 3px 3px 3px;
+}
+
+.text-photographe { /* Texte de présentation du photographe */
+    margin: 0px 0px 3px 0px;
+    color: #525252;
+    font-size: 18px;
 }
