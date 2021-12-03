@@ -1,10 +1,3 @@
-/** 
-   * Fonction qui recupere des donnees du fichiers json
-   * @param {"../json/fishEye.json"} url
-   * @return {promise}
-
- */  
- 
 export default function fetchData(url) {
 
      /** 
