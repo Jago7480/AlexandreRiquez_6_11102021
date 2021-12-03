@@ -9,19 +9,15 @@ export default function photographersFilterTag(photographersArray, tag){
     */
 
     // Tu filtres les photographes avec la methode array.filter() et tu retournes le nouveau tableau contenant les photographes filtres.
-    // Note importante il faudra utiliser la methode toLowerCase sur la variable tag
+ 
+    return photographersArray.filter((photograph)=>{
 
-    // document.querySelectorAll(".navbar");
-    // document.querySelectorAll('[data-tag]');
+         if(photograph?.tags.includes(tag.toLowerCase()) === true){
 
-    // const dataTags = ['[data-tag]'];
-    
-    //chemin de réflexion 1
-    // if dataTags.match(toLowerCase)
+              return photograph;
 
-    //chemin de réflexion 2
-    // const filterTag = dataTags.filter(function(toLowerCase) {
-    //   return toLowerCase
-    // })
+         }
+
+    });
 
 }
