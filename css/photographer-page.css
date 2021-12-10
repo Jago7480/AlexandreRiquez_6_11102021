@@ -49,6 +49,13 @@ h5 { /* Menus */
     font-size: 16px;
 }
 
+h6 { /* Passer au contenu */
+    font-weight: 700;
+    font-style: normal;
+    font-size: 18px;
+    color: black;
+}
+
 p { /* Texte lambda */
     font-style: normal;
     font-weight: normal;
@@ -200,4 +207,92 @@ header {
 
 .filter {
     display: flex;
+}
+
+.filter_select {
+    background-color: #901C1C;
+    color: white;
+    margin: 20px;
+    padding: 10px;
+    width: 170px;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.filter_select:hover, .filter_select:checked {
+    box-shadow: 0 0 10px 100px #901C1C inset;
+}
+
+.separator {
+    color: white;
+}
+
+#container_photos {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.panel_photo {
+    margin: 0px 30px 10px 30px;
+}
+
+.photo_box {
+    width: 350px;
+    height: 300px;
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+.photo {
+    display: inline-block;
+    width: 350px;
+    height: 350px;
+    object-fit: cover;
+}
+
+.name_like {
+    color: #901C1C;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: -20px;
+}
+
+.like_counter {
+    display: flex;
+    flex-direction: row;
+}
+
+.like_number {
+    padding-right: 5px;
+}
+
+.heart {
+    width: 22px;
+    height: auto;
+}
+
+.container-sticky {
+    z-index: 2;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    margin: 6px 0px 6px -91px;
+}
+
+#retour-contenu {
+    width: 182px;
+    height: 30px;
+    background-color: #DB8876;
+    border-radius: 7px;
+    display: none;
+    justify-content: center;
+    align-items: center;
 }
