@@ -205,6 +205,10 @@ header {
     font-size: 18px;
 }
 
+.bground {
+    display: none;
+}
+
 .filter {
     display: flex;
 }
