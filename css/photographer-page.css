@@ -179,15 +179,15 @@ header {
     align-items: center;
     margin: 0px 0px 0px 75px;
     font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
+    font-weight: 600;
+    font-size: 15px;
     color: white;
     transition: 0.1s ease-in;
 }
 
-.contact:hover {
-    background-color: #FFFFFF;
-    color: #901C1C;
+.contact:hover, .contact:focus {
+    background-color: #D3573C;
+    color: black;
 }
 
 .localisation-photographe {
@@ -206,7 +206,7 @@ header {
 }
 
 .bground {
-    display: none;
+    display: block;
 }
 
 .filter {
